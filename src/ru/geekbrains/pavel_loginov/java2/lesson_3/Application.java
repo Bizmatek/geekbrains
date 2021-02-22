@@ -15,9 +15,11 @@ public class Application {
             map.put(word, value + 1);
         }
 
+        System.out.println("unique words:");
         map.forEach((k, v) -> {
             System.out.println(k);
         });
+        System.out.println("\ncount of words:");
         System.out.println(map);
 
         //2
@@ -26,6 +28,7 @@ public class Application {
         phonebook.add("Ivanov", "+77777777");
         phonebook.add("Petrov", "+44444444");
 
+        System.out.println("\nphone numbers by lastName:");
         System.out.printf("Ivanov's numbers: %s\n", phonebook.get("Ivanov"));
         System.out.printf("Petrov's numbers: %s\n", phonebook.get("Petrov"));
         System.out.printf("Sidorov's numbers: %s\n", phonebook.get("Sidorov"));
